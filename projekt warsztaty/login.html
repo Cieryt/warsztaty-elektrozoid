@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Elektrozoid | Zaloguj</title>
+    <link rel="icon" href="favicon.ico">
+    <link type="text/css" rel="stylesheet" href="styleCSS/styl_glowny.css">
+    <link type="text/css" rel="stylesheet" href="styleCSS/login.css">
+    <script src="https://kit.fontawesome.com/e9875672a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    
+</head>
+<body>
+    
+    <!--------------------------------------------------------------------------------------------->
+    
+    <div id="baner">
+        
+        <a href="login.html" title="Zaloguj"><i class="fas fa-sign-in-alt "><p>Zaloguj</p></i></a>
+        <a href="koszyk.html" title="Koszyk"><i class="fas fa-shopping-cart " ><p>Koszyk</p></i></a>
+        <a href="o_nas.html" title="O nas"><i class="fas fa-info "><p>O nas</p></i></a>
+        <a href="kontakt.html" title="Kontakt"><i class="fas fa-phone-square-alt "><p>Kontakt</p></i></a>
+        <div>
+            <a href="index.html" title="Strona główna"><i id="homeButton" class="fas fa-home "><p>Strona główna</p></i></a>
+        </div>
+     
+    </div>
+    
+
+    <!--------------------------------------------------------------------------------------------->
+
+    <div id="top">
+        <table>
+            <tr>
+                <td onclick="location.href='kategoria1.html'">Kategoria 1   <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='kategoria2'">Kategoria 2    <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='kategoria3'">Kategoria 3    <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='kategoria4'">Kategoria 4    <i class="fas fa-caret-down"></i></td>
+            </tr>
+        
+        </table>
+    
+    </div>
+
+    <!--------------------------------------------------------------------------------------------->
+
+    <div id="main">
+        
+            <div id="login">
+                <form action="#" method="POST">
+                    <table>
+                        <tr>
+                            <td colspan="2">Zaloguj się</td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Login: </td> 
+                            <td><input type="email" id="loginEmail" class="email" placeholder="E-mail"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td> Hasło: </td> 
+                            <td><input type="password" id="loginPassword" class="password" placeholder="Hasło">
+                            <input type="checkbox" onclick="showLogPassword()"> Pokaż</td>
+                        </tr>
+                    </table>
+                    
+                    <button type="submit" id="loginSubmit" class="submit">Zaloguj</button>
+
+                </form>
+            </div>
+<!---------------------------------------------------------------------------------------->
+            <div id="register">
+                <form action="#" method="POST">
+                    <table>
+                        <tr>
+                            <td colspan="2">Zarejestruj się</td>
+                        </tr>
+                        <tr>
+                            <td> Login: </td> 
+                            <td><input type="email" id="registerEmail" class="email" placeholder="E-mail"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td> Hasło: </td> 
+                            <td><input type="password" id="registerPassword" class="password" placeholder="Hasło">
+                            <input type="checkbox" onclick="showRegPassword()"> Pokaż</td>
+                        </tr>
+                    </table>
+                    
+                    <button type="submit" id="registerSubmit" class="submit">Zarejestruj</button>
+
+                </form>
+                    
+            </div>
+        
+    </div>  
+        
+    <!--------------------------------------------------------------------------------------------->
+
+    <div id="weAreGoingUp" onclick="topFunction()">
+        <i class="fas fa-arrow-circle-up fa-3x" title="Do góry"></i>
+    </div>
+    
+    <!--------------------------------------------------------------------------------------------->
+    
+    <div id="footer">
+        <hr>
+        <hr>
+        <h5>
+            <table>
+                <tr>
+                    <td><h2>Projekt witryny sklepu internetowego wykonali</h2></td>
+                </tr>
+                <tr>
+                    <td>Jan Pawłowski (Nr albumu: 37665) – lider, koordynator;</td>
+                </tr>
+                <tr>
+                    <td>Kamil Pietrzak (Nr albumu: 38096) – programista Backend;</td>
+                </tr>
+                <tr>
+                    <td>Mateusz Cieryt (Nr albumu: 37645) – programista Frontend;</td>
+                </tr>
+            </table>
+
+        </h5>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function topFunction() {
+      
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<script>
+function showLogPassword() {
+  var login = document.getElementById("loginPassword");
+
+  if (login.type === "password") {
+    login.type = "text";
+  } else {
+    login.type = "password";
+  }
+
+} 
+    </script>
+
+<script>
+function showRegPassword() {
+  var register = document.getElementById("registerPassword") 
+
+  if (register.type === "password") {
+    register.type = "text";
+  } else {
+    register.type = "password";
+  }
+} 
+    </script>
