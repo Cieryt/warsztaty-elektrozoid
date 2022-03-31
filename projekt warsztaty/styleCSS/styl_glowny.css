@@ -2,11 +2,11 @@
     box-sizing: border-box;
     letter-spacing: 1px;
     
-  }
+}
 
 button{
     margin-top: 1%;
-    border-color: #133E83;
+    border-color: #2368d6;
     border-width: 2px;
     border-radius: 25px;
     background-color: black;
@@ -27,12 +27,12 @@ body{
 #baner{
     top: 0;
     position: sticky;
-    background-image: linear-gradient(to bottom right, #133E83, #1b51a8);
+    background-image: linear-gradient(to bottom right, #2368d6, #2c7cfd);
     height:10%;
     width: 100%;
     font-size: 5vh;   
-    box-shadow: 0 0 4px 2px rgb(133, 133, 133); 
-    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 0 4px 2px gray; 
+    z-index: 98;
 }
 
 
@@ -47,7 +47,7 @@ body{
 }
 
 #baner>a>i>p{
-    color: rgb(197, 197, 197);
+    color: rgb(253, 252, 252);
 }
 
 
@@ -70,31 +70,16 @@ p{
     padding: 0;
     
 }
-#homeButton{
+
+#logo_banner{
     float: left;
-    margin-left: 2.5%;
-    margin-top: 1%;
-    cursor: pointer;
-    text-align: center;
-    color: rgb(46, 46, 46)
-    
+    margin-left: 8px;
 }
 
-#homeButton>p{
-    color: rgb(197, 197, 197);
-}
-
-#homeButton:hover{
-    float: left;
-    margin-left: 2.5%;
-    margin-top: 1%;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 10%;
-    color: rgb(197, 197, 197);
+#logo_banner:hover{
+    opacity: 0.70;  
     transition: 0.25s;
 }
-
 
 #top{ 
     float: left;
@@ -102,7 +87,7 @@ p{
     height: 5%;
     width: 100%;
     margin: 7px 0px 5px 0px;
-    border-bottom: 1px solid rgb(197, 197, 197);
+    border-bottom: 2px solid rgb(197, 197, 197);
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -114,7 +99,7 @@ p{
 }
 
 #top td{ 
-    
+    width: 33.33%;
     cursor:pointer;
     background-color: rgb(179, 179, 179);
     color: black; 
@@ -124,13 +109,12 @@ p{
         border-bottom-left-radius: 20px;
 }
 
-#top td:nth-of-type(4){
+#top td:nth-of-type(3){
         border-bottom-right-radius: 20px;
 }
 
 #top td:hover{
-    background-color: rgb(163, 162, 162);
-    color: #133E83;
+    background-color: #205ec2;
     transition: 0.25s;
 }
 
@@ -139,6 +123,7 @@ p{
     width: 100%;
     min-height: 100%;
     max-height: fit-content;
+    
 }
 
 #mainContent{
@@ -147,7 +132,8 @@ p{
     float: left;
     margin: 5px 5% 5px 5%;
     height: 100%;
-    max-height: fit-content;
+    min-height: 100%;
+    
 }
 
 #weAreGoingUp{
@@ -166,7 +152,7 @@ p{
 #weAreGoingUp i{
     background-color: rgb(216, 216, 216);
     border-radius: 50%;
-    color: #133E83;
+    color: #2368d6;
 }
 
 
@@ -175,14 +161,41 @@ p{
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 #footer table{
     margin-left: auto; 
     margin-right: auto;
+    width: 45%;
+    float: left;
+}
+
+#linki{
+    margin-left: 5%;
+    width: 47%;
+    float: left;
+    text-align: left;
 }
 
 #footer td{
     text-align: center;
     border: 2px solid;
+}
+
+.white_shadow_box{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px gray;
+}
+
+#linki a:any-link{
+    color: black;
+}
+
+@media only screen and (max-width: 762px) {
+
+    #linki, #footer table{
+        width: 98%;
+    }
 }

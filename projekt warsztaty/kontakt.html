@@ -19,11 +19,9 @@
         
         <a href="login.html" title="Zaloguj"><i class="fas fa-sign-in-alt "><p>Zaloguj</p></i></a>
         <a href="koszyk.html" title="Koszyk"><i class="fas fa-shopping-cart " ><p>Koszyk</p></i></a>
-        <a href="o_nas.html" title="O nas"><i class="fas fa-info "><p>O nas</p></i></a>
-        <a href="kontakt.html" title="Kontakt"><i class="fas fa-phone-square-alt "><p>Kontakt</p></i></a>
-        <div>
-            <a href="index.html" title="Strona główna"><i id="homeButton" class="fas fa-home "><p>Strona główna</p></i></a>
-        </div>
+        <a href="index.html" title="Strona główna"> <img src="Logo_dlugie.png" id="logo_banner" style="height: 100%;"></a>
+        
+    </div>
      
     </div>
     
@@ -33,10 +31,9 @@
     <div id="top">
         <table>
             <tr>
-                <td onclick="location.href='kategoria1.html'">Kategoria 1   <i class="fas fa-caret-down"></i></td>
-                <td onclick="location.href='kategoria2'">Kategoria 2    <i class="fas fa-caret-down"></i></td>
-                <td onclick="location.href='kategoria3'">Kategoria 3    <i class="fas fa-caret-down"></i></td>
-                <td onclick="location.href='kategoria4'">Kategoria 4    <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='podzespoly.html'">Podzespoły   <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='telefony.html'">Telefony    <i class="fas fa-caret-down"></i></td>
+                <td onclick="location.href='drukarki.html'">Drukarki    <i class="fas fa-caret-down"></i></td>
             </tr>
         
         </table>
@@ -48,9 +45,10 @@
     <div id="main">
         
         <div id="mainContent">
-            <div id="info">
+            <div id="info" class="white_shadow_box">
+                <br><br>
                 Numer: 999-999-999<br>
-                E-mail: elektrozoid.warsztaty@gmail.com<br><br>
+                E-mail: elektrozoid.warsztaty@gmail.com<br><br><br>
                 
             </div>
             
@@ -84,6 +82,11 @@
     <div id="footer">
         <hr>
         <hr>
+        <div id="linki">
+            <a href="o_nas.html" title="O nas"><i class="fas fa-info "> O nas</i></a><br><br>
+            <a href="kontakt.html" title="Kontakt"><i class="fas fa-phone-square-alt "> Kontakt</i></a><br><br>
+
+        </div>
         <h5>
             <table>
                 <tr>
@@ -112,4 +115,18 @@
       
       document.documentElement.scrollTop = 0;
     }
+</script>
+
+<script>
+    var limitFunc = function () {
+        if (window.innerWidth <= 762) {
+            document.getElementById("logo_banner").src="Logo_male.png";
+        }
+        if (window.innerWidth > 762) {
+            document.getElementById("logo_banner").src="Logo_dlugie.png";
+        }
+    };
+
+    window.addEventListener("resize", limitFunc);
+    window.addEventListener("onload", limitFunc);    
 </script>

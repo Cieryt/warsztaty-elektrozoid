@@ -1,5 +1,5 @@
-#login, #register{
-    width: 50%;
+#form{
+    width: 100%;
     height: 100% !important;
     text-align: center;
     float: left;
@@ -15,6 +15,10 @@
     box-shadow: 2px 2px 4px 2px grey;
 }
 
+#main a:any-link{
+    color: #2368d6;
+    text-decoration: none;
+}
 
 table{
     margin-left: auto; 
@@ -23,14 +27,4 @@ table{
 
 input{
     float: left;
-}
-@media only screen and (max-width: 762px) {
-    #login, #register{
-        width: 100%;
-        height: 100% !important;
-        text-align: center;
-        float: left;
-        padding-top: 10%;
-        
-    }
 }
